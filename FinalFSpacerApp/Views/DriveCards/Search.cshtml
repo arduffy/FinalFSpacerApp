@@ -1,0 +1,24 @@
+﻿@model FinalFSpacerApp.Models.SearchInputModel
+@{
+    ViewData["Title"] = "Search";
+}
+
+
+<form asp-controller="DriveCards" asp-action="SearchResults" method="post">
+    <label asp-for="SearchModel">Search by Model</label>
+    <input asp-for="SearchModel" type="text" /><br />
+    <label asp-for="SearchRatio">Search by Ratio</label>
+    <input asp-for="SearchRatio" type="text" /><br />
+    <label asp-for="SearchDriveNumber">Search by Drive Number</label>
+    <input asp-for="SearchDriveNumber" type="text" /><br />
+    <label asp-for="SearchGearNumber">Search by Gear Number</label>
+    <input asp-for="SearchGearNumber" type="text" /><br />
+
+
+    <input type="submit" value="submit" /><br />
+</form>
+
+
+
+
+
